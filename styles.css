@@ -1,0 +1,440 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: url(smarthome.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+ }
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    margin: 5px;
+    width: 99%;
+    position: fixed; /* si scroleo la navbar siempre baja y no se me superpone con otros elementos */
+    top: 0; /* si scroleo la navbar siempre baja y no se me superpone con otros elementos */
+    z-index: 1; /* si scroleo la navbar siempre baja y no se me superpone con otros elementos */
+}
+
+.logo{
+    margin: 5px;
+     height: 60px;
+     border-radius: 20px;
+    
+}
+  .navbar{
+    display: flex;
+}
+
+.opciones{
+    margin:0 15px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main{
+    display: flex  ;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.section1 {
+    margin: 100px 0px 0px 40px;
+    text-align: center;
+}
+
+h1{
+    color:rgb(255, 255, 255);
+    font-size: 50px;
+    margin-bottom: 15px;  
+    text-shadow: -3px -3px 2px #000
+}
+
+.eslogan {
+    color:rgb(255, 255, 255);
+    font-size: 30px;  
+    text-shadow: -2px -2px 1px #000
+}
+
+.section2{
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(252, 252, 254, 0.789);
+    border-radius: 10px;
+    padding: 8px;
+    margin-right: 250px;
+    margin-top: 150px;
+}
+
+.section3 {
+    display: flex;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    align-items: center;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px; 
+    padding: 10px 5px 0 8px;
+    text-transform: uppercase;
+    margin: 20px 5px;
+    width: 99%;
+}
+.smartsillon {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+.sectioncards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px; 
+}
+
+.imagenescards{
+    height: 120px;
+    width: 180px;
+    border-radius: 5px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 370px;
+    width: 320px;
+    background-color: rgba(252, 252, 254, 0.789);
+    margin: 5px;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 18px;
+    padding: 5px;
+    text-align:center;
+        
+}
+.cards b {
+    text-align: center;
+}
+
+.contacto {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 99%;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content:space-around;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+
+}
+
+.infocontacto {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 50px 5px 10px;
+}
+.infocontacto b{
+    margin-top:10px ;
+    margin-bottom: 10px;  
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 30px;
+  }
+.maps{
+    display: block;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color:rgb(255, 255, 255);
+
+}
+
+/* Menu hamburguesa  */
+
+.checkbutton{
+    font-size: 30px;
+    color: black;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none; 
+}
+
+#check{
+    display: none;
+}
+
+/* media query */
+
+@media (max-width: 1250px){
+    h1{
+       font-size: 35px;
+    }
+    
+    .eslogan {
+        font-size: 25px;  
+    }
+    .section2{
+        font-size: 30px;
+        margin-right: 100px;
+    }
+    .section3 {
+        font-size: 23px;
+    }
+    .smartsillon {
+        height: 200px;
+        width: 300px;
+        margin-right: 20px;
+        margin-left: 20px; 
+    }
+}
+ 
+@media (max-width: 1000px){
+    h1{
+        font-size: 30px;
+     }
+     .eslogan {
+         font-size: 20px;  
+     }
+     .section2{
+         font-size: 25px;
+         margin-right: 80px;
+     }
+     .opciones{
+        margin:0 10px;
+        font-size: 15px;
+     } 
+     .section3 {
+        font-size: 19px;
+    }
+    .smartsillon {
+        height: 190px;
+        width:260px;
+        margin-right: 10px;
+        margin-left: 20px; 
+    }
+
+}
+
+@media (max-width: 800px){
+   .section1{
+    margin-top: 25px;
+   }
+    h1{
+        font-size: 25px;
+     }
+     .eslogan {
+         font-size: 15px;  
+     }
+     .section2{
+         font-size: 20px;
+         margin-right: 60px;
+      }
+     .opciones{
+        margin:0 8px;
+        font-size: 13px;
+     } 
+     .logo{
+         height: 40px;
+         border-radius: 10px;
+    }
+    .section3 {
+        font-size: 15px;
+       margin-bottom: 0;
+        }
+    .smartsillon {
+        height: 150px;
+        width:230px;
+        margin-right: 10px;
+        margin-left: 20px; 
+    }
+    .maps{
+        display: none;
+    }
+    .contacto {
+
+        font-size:18px;
+    
+    }
+
+}
+@media (max-width: 700px){
+    .cards{
+        font-size: 15px;
+        height: 330px;
+        width: 290px;
+    }
+
+}
+
+@media (max-width: 650px){
+    h1{
+        font-size: 30px;
+     }
+     
+     .eslogan {
+         font-size: 15px;  
+     }
+     .section2{
+         font-size: 18px;
+         margin-right: 35px;
+     }
+
+    .checkbutton{
+        display: block;
+    }
+    #check:checked ~ ul{
+         left: 0;
+      }
+  
+   .navbar{
+        display: block;
+        position: fixed; 
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgba(252, 252, 254, 0.789);
+        top: 65px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s; 
+    }
+    nav ul li {
+        margin: 20px 0;
+    }
+    nav ul a {
+        font-size: 15px;
+    }
+    li a:hover, li a.opciones{
+        background: none;
+        color: rgb(23, 23, 22);
+    }
+    .section3 {
+        font-size: 12px;
+    }
+    .smartsillon {
+        height: 130px;
+        width:220px;
+        margin-right: 10px;
+        margin-left: 20px; 
+    }
+    .cards{
+        font-size: 13px;
+        height: 300px;
+        width: 240px;
+    }
+    .imagenescards{
+        height: 110px;
+        width: 150px;
+        border-radius: 5px;
+    }
+
+
+    footer{
+        font-size: 14px;
+    
+    }
+ 
+}
+@media (max-width: 576px){
+    h1{
+        font-size: 22px;
+     }
+     
+     .eslogan {
+         font-size: 12px;  
+     }
+     .section2{
+         font-size: 12px;
+         margin-right: 30px;
+     }
+
+    
+    .checkbutton{
+        display: block;
+    }
+    #check:checked ~ ul{
+         left: 0;
+      }
+  
+   .navbar{
+        display: block;
+        position: fixed; 
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgba(252, 252, 254, 0.789);
+        top: 65px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s; 
+    }
+    nav ul li {
+        margin: 20px 0;
+    }
+    nav ul a {
+        font-size: 15px;
+    }
+    li a:hover, li a.opciones{
+        background: none;
+        color: rgb(23, 23, 22);
+    }
+    .section3 {
+        font-size: 10px;
+    }
+    .smartsillon {
+        height: 80px;
+        width:150px;
+        margin-right: 10px;
+        margin-left: 20px; 
+    }
+    .cards{
+        font-size: 11px;
+        height: 270px;
+        width: 200px;
+    }
+    .imagenescards{
+        height: 90px;
+        width: 120px;
+        border-radius: 5px;
+    }
+    .contacto {
+
+        font-size:15px;
+    
+    }
+
+    footer{
+        font-size: 12px;
+    
+    }
+ 
+}
+
+
+
